@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+	char name[10] = "Juan Pablo";
+	int  age = 19;
+	float height = 1.68;
+	printf("\n Nome: %s", name);
+	printf("\n Idade: %d", age);
+	printf("\n Altura: %f", height);
+return 0;
+}

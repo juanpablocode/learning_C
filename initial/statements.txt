@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+	printf("Olá Mundo!\n");
+	printf("Bem Vindo \t");
+	printf("Juan Pablo\n");
+	printf("Está e a representação dos \'duble quotes\'");
+	return 0;
+}

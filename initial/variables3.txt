@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+	int n1 = 20;
+	char n2 = 'j';
+	printf("My favorite letter is %c and my favorite number is %d",n2, n1);
+	return 0;
+}

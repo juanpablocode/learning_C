@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main () {
+	int user_age = 19;
+    int age_alowed = 18;
+    
+    printf("Verifing if you can vote...\n");
+    
+    (user_age >= age_alowed) ? printf("Congratulations ! You can vote!") : printf("You can't vote!");
+    
+    return 0;
+}

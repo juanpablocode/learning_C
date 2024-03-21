@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+	//criando variaveis
+	int n1 = 19;		//Integer type
+	char name = 'juan';	//Char type
+	float height = 1.68;	//float type
+	printf("\n %d", n1);
+	printf("\n %c", name);
+	printf("\n %f", height);
+	return 0;
+}

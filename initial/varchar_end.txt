@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(){
+	int studentId = 547;
+    int studentAge = 19;
+    float studentFee = 87.33;
+    char studentGrade = 'B';
+    
+    printf("Id de indentificação do Aluno: %d", studentId);
+    printf("\n Idade do Aluno: %d", studentAge);
+    printf("\n Nota do Aluno: %d", studentFee);
+    printf("\n Nota final do Aluno: %c", studentGrade);
+    
+    return 0;
+}

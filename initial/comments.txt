@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+	//printf linha não considerada
+	// () dentro das barras vc pode chamar funções e mensionar variaveis
+	// alem de poder concatenar, setar e reliazar operações matematicas
+	printf("Hidden words"); // not exatly lol
+	/* os comentários podem ser feitos tmb em formas de multlines
+	like this ways, like i did
+	by Juan Pablo*/
+	return 0;
+}
