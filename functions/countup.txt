@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+	int count = 10;
+	do {
+	printf("Countdown %d\n", count);
+	count--;
+}
+while (count > 0);
+	printf("%d", count);
+return 0;
+}

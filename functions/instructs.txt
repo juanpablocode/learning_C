@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+
+typedef struct Pokemon{
+	char name[256];
+    char type[256];
+    int id;
+} Pokemon;
+
+int main() {
+	Pokemon pikachu;
+    strcpy(pikachu.name, "pikachu");
+    strcpy(pikachu.type, "electric");
+    pikachu.id = 25;
+    
+    printf("Name: %s, Tipo: %s, Numero: %d", pikachu.name, pikachu.type, pikachu.id);
+return 0;
+}

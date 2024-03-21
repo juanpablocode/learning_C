@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(){
+	int i;
+	printf("Days Counter! \n");
+	printf("\n");
+
+	for (i = 1; i <= 30; i++){
+	printf("Day %d\n", i);
+    if (i == 20){
+	printf("Happy Birthday!\n");
+    break;
+}
+}
+return 0;
+}

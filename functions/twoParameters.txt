@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int calcFun(int n1, int n2) {
+    return n1 + n2;
+}
+
+int main() {
+    int n1;
+    int n2 = 5;
+
+    printf("Calculadora Simples\n");
+    printf("Digite o primeiro número: ");
+    scanf("%d", &n1);
+
+    printf("%d + %d = %d\n", n1, n2, calcFun(n1, n2));
+
+    return 0;
+}

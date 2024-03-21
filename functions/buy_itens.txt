@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+	int item_number = 50;
+	char item_name[20] = "Mouse Razer";
+	float item_cost = 190.99;
+	char item_currency = '$';
+    float item_checkout;
+
+	printf("Voce esta levando %d quantidade do(a) %s, que custa %.2f que vai ser pago em %c \n", item_number, item_name, item_cost, item_currency);
+    item_checkout = item_number * item_cost;
+    printf("%c %.3f",item_currency, item_checkout );
+	
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

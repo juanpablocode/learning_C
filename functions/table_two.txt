@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+	int i;
+	int num = 2;
+	
+	printf("Easy Table");
+	for (i = 1; i <= 10; i++){
+	printf("%d x %d = %d\n", num, i, i * num);
+}
+return 0;
+}
