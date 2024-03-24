@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+	char firstName[20] = "Juan ";
+	//char firstName[20] = "Juan";
+    char lastName[] = "Pablo";
+	
+	//strcat(firstName, lastName);
+    strcat(firstName, lastName);
+    
+	printf("User Name: %s", firstName);
+return 0;
+}

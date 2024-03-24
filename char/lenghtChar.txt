@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+	char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	printf("String Length with strlen: %d \n", strlen(alphabet));
+	printf("String Lenght with sizeof: %d", sizeof(alphabet));
+return 0;
+}

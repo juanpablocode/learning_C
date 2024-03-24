@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+		char userSha[] = "4719b38e7a276b43099ce4d6349e6bfc80edf644ee59d9dafd264bc7ed7691f4";
+        char trueSha[] = "4719b38e7a276b43099ce4d6349e6bfc80edf644ee59d9dafd264bc7ed7691f4";
+  		// don't forget to use this in Windows poweshell "certutil -hashfile ".\VirtualBox-7.0.14-161095-Win.exe" sha256"
+  		if (strcmp(userSha, trueSha) == 0){
+        	printf("Download Seguro %d", strcmp(userSha, trueSha));
+		
+        }else{
+        	printf("Download Inseguro %d", strcmp(userSha, trueSha));
+        }
+return 0;
+}

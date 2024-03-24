@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(){
+	char powerWord[] = "Abra Cadabra 你好";
+	//int count = sizeof(powerWord) / sizeof(powerWord[0]);
+	int count = sizeof(powerWord);
+    int i;
+
+	for (i = 0; i < count; i++){
+    	printf("%c", powerWord[i]);
+    }
+	printf("\n%d", count);
+
+return 0;
+}

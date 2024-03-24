@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main() {
+	char sentence[] = "Hello World!";
+	printf("%c ", sentence[5]);
+return 0;
+}

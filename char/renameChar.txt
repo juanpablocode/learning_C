@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main(){
+	char user_name[] = "Juan Pablo";
+	user_name[0] = 'R';
+    printf("User Name: %s", user_name);
+    
+return 0;
+}

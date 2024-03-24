@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main(){
+	char message[] = {'H', 'e', 'l', 'l', 'o', '\n'};
+	char userName[] = "Juan";
+	int age = 20;
+
+	printf("%s %s, age %d", message, userName, age);
+return 0;
+}

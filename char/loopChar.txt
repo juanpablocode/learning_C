@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(){
+	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
+
+	for (i = 0; i < 26; i++){
+    	if (i == 25){
+    		printf("%c.", alpha[i]);
+        	break;
+    	}
+	printf("%c, ", alpha[i]);
+}
+
+return 0;
+}

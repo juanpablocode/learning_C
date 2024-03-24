@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+	char userName[40] = "Juan";
+	char lastName[] = "Pablo";
+	char space[]= " ";
+
+	if (strlen(userName) + strlen(space)+ strlen(lastName) < sizeof(userName)){
+	
+	strcat(userName, space);
+	strcat(userName, lastname);
+	printf("User Logged: %s", userName);
+}else {
+	printf("Error !!! BufferOverFlow detected!");
+}
+return 0;
+}

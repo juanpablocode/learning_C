@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+	char firstName[50] = "Juan";
+	char lastName[] = "Pablo";
+	char userName[50];
+	char space[] = " ";
+	
+	if (strlen(firstName) + strlen(space) +strlen(lastName) < sizeof(firstName)){
+        	strcat(firstName, space);
+        	strcat(firstName, lastName);
+	}else{
+    		printf("Error, Buffer Overflow detected!");
+    	}
+    
+    	if (strlen(firstName) + strlen(userName) < sizeof(userName)){
+    		strcpy(userName, firstName);
+        	printf("Welcome %s!", userName);
+    	}else{
+    		printf("Error, Buffer Overflow detected!");
+    	}
+return 0;
+}

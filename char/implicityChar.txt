@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main(){
+	char name[] = {'J', 'u', 'a', 'n', ' ', 'P', 'a', 'b', 'l', 'o', '\0'};
+	
+	printf("%s!", name);
+
+return 0;
+}
