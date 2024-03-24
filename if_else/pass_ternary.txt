@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main () {
+	int pass = 91317;
+	int user_input = 101418;
+
+	(pass == user_input) ? printf("Guaranteed Access!") : printf("Access Denied!");
+	
+	return 0;
+}
