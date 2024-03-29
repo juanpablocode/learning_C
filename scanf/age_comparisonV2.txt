@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(){
+
+	int young_famArray[] = {20, 22, 18, 35, 48, 26, 15, 87, 70};
+	int count = sizeof(young_famArray) / sizeof(young_famArray[0]);
+    	int lowestArray = young_famArray[0];
+    	int i;
+	
+	for (i = 0; i < count; i++){
+		//printf("It's working\n");
+        if (young_famArray[i] < lowestArray){
+        	lowestArray = young_famArray[i];
+            
+        } 
+	}
+    	printf("Founded %d! \n", lowestArray);
+return 0;
+}

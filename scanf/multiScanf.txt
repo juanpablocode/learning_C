@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+	int userNum;
+	char userChar;
+	
+	printf("Insert a number and a character\n");
+	scanf("%d %c", &userNum, &userChar);
+	printf("Your Number is %d", userNum);
+	printf("Your Character %c", userChar);
+return 0;
+}
