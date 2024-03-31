@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+	int i = 1;
+	printf("Do we arrive?\n");
+	printf("\n");
+
+	while (i <= 6){
+    	printf("Do we arrive?\n");
+    if (i == 6) {
+		printf("Yes Son! Let's GO!");
+    }else{
+    	printf("%d° NO\n", i);
+    }
+		i = i + 1;
+}
+return 0;
+}

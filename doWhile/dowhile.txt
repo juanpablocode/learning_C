@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+	int  i;
+	
+	do {
+		printf("Good Morning\n");
+        printf("%d \n", i);
+		i++;
+}
+while (i <= 12);
+
+	do {
+		printf("Good Afternoon\n");
+        printf("%d \n", i);
+		i++;
+}
+while (i <= 18);
+
+	do {
+    	printf("Good Night\n");
+        printf("%d \n", i);
+        i++;
+}
+while (i <= 23);
+
+return 0;
+}

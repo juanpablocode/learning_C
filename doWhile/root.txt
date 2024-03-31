@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(){
+	int i, x;
+    int root = 121;
+	printf("Whats the root of %d?\n", root);
+
+	do {
+    i++;
+    x = i * i;
+	printf("%d x %d = %d\n", i, i, x);
+    
+}
+	while (x < root);
+return 0;
+}

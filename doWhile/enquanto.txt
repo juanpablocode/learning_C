@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+	int c1;
+	while (c1 < 10) {
+	
+	printf("Olá Juan! \n");
+	c1++;
+}
+return 0;	
+}
