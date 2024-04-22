@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main (){
+	int studentID = 567;
+	int studentAge = 20;
+	int studentFee = 80.55;
+	char studentGrade = "B+";
+	
+	printf("Id do estudante %d", studentID);
+	printf("Idade do estudante %d", studentAge);
+	printf("Nota do Aluno %d", studentFee);
+	printf("Grade do Aluno %s", studentGrade);
+
+return 0;
+}
+Id do estudante
+Idade do estudante 
+Nota do estudante
+Nota Numerica do estudante

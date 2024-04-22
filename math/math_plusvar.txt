@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(){
+	int v1 = 6, v2 = 4, v3;
+	v3 = v1+ v2;
+	printf("%d + %d = %d", v1, v2, v3);
+    return 0;
+}
+
+int main(){
+	char name = "Juan", firstn = "Pablo";
+    printf("Nome do usuario %c %c", name, firstn);
+    return 0;
+}

@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main(){
+	float h = 5.0/2.0;
+    	//float h = (float) 5/2;
+    printf("%.1f", h);
+    return 0;
+}
