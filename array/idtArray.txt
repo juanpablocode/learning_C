@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(){
+	int ftArray[] = {10, 20, 30, 40, 50};
+	
+	ftArray[0] = 1;
+	ftArray[1] = 2;
+	ftArray[2] = 3;
+	ftArray[3] = 4;
+	ftArray[4] = 5;
+
+	printf("Value %d \n", ftArray[0]);
+	printf("Value %d \n", ftArray[1]);
+	printf("Value %d \n", ftArray[3]);
+	printf("Value %d \n", ftArray[4]);
+return 0;
+}

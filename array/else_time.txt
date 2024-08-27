@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+
+	int current_t = 14;
+	int morning_t = 12;
+	int afternoon_t = 13;
+	int night_t = 18;
+	
+	printf("Que horas são?");
+
+if (current_t > 5 && current_t <= morning_t) {
+
+	printf("Good Morning!");
+
+}else if (current_t >= afternoon_t && current_t < night_t ){
+
+	printf("Good afternoon");
+
+}else {
+
+	printf("Good night");
+
+}
+return 0;
+}

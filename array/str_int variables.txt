@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+	int student_id = 397;
+	char student_name[256] = "Juan";
+	int student_age = 19;
+	float student_height = 1.68;
+	printf("Retorno da Pesquisa: \n");
+	printf("ID: %d \t Nome; %s \t Idade: %d,\t Altura: %f", student_id, student_name, student_age, student_height);
+	return 0;
+}

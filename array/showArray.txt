@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(){
+	int newArray[] = {07, 29, 15, 30};
+	int i;
+
+	for (i = 0; i < 4; i++){
+	printf("%d \n", newArray);
+}
+return 0;
+}

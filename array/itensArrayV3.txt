@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+	int iniArray[] = {2, 4, 6, 8, 10};
+	int count = sizeof(iniArray) / sizeof(iniArray[0]);
+    	int i;
+
+	for (i = 0; i < count; i++){
+	printf("%d\n", iniArray[i]);
+}
+//printf("%d", count);
+return 0;
+}

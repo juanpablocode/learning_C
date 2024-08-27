@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+	int newArray[] = {10, 25, 50, 75, 100};
+	int length = sizeof(newArray) / sizeof(newArray[0]);
+    printf("length in bits: %d \n", sizeof(newArray));
+    printf("Length in elements: %d \n", length);
+
+return 0;
+}

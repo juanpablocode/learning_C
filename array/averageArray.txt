@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+	int agesArray[] = {8, 12, 16, 20, 29, 36, 54};
+	int count = sizeof(agesArray) / sizeof(agesArray[0]);
+	float avg, sum = 0;
+	int i;
+    printf("Number of elements%d \n", count);
+    
+    for (i = 0; i < count; i++){
+	sum += agesArray[i];
+}
+	avg = sum / count;
+	printf("The average age is %.2f", avg);
+return 0;
+}

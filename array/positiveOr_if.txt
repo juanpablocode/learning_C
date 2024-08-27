@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+	int user_input = 12;
+	printf("Is this positive or negative\n");
+	
+	if (user_input >= 0) {
+	printf("The number %d is positive", user_input);
+
+} else if (user_input < 0) {
+	printf("The number %d is negative", user_input);
+} else {
+	printf("Error 504");
+}
+return 0;
+}

@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+	int plusArray[] = {5, 10, 15, 20, 25};
+	printf("%d\n", plusArray[0]);
+	printf("\n");
+	printf("Array length: %d ", sizeof(plusArray));
+return 0;
+}

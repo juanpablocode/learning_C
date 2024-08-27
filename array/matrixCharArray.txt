@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+	char mulArray[2][3][20] = {{"Tv Sansung", "2599", "2024"}, {"Mouse Razer", "299", "2016"}};
+	printf("To Buy List:\n \n");
+	printf("%s R$%s, ano(%s)", mulArray[0][0], mulArray[0][1], mulArray[0][2]);
+	
+return 0;
+}

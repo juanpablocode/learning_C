@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+	int matrix[2][3] = {{8, 12, 16}, {10, 14, 18}};
+	int length = sizeof(matrix);
+    printf("%d \n", matrix[0][0]);
+    printf("%d \n", matrix[1][2]);
+    printf("size in bytes: %d \n", length);
+return 0;
+}

@@ -1,0 +1,15 @@
+#include <stdio.h>
+//#include <stdbool>
+
+int main() {
+	int time = 14;
+	int morning = 11;
+	int evening = 12;
+
+	if (time <= morning) {
+	printf("Good morning!");
+}else{
+	printf("Good afternoon");
+}
+	return 0;
+}

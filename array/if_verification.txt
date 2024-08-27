@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+int main() {
+	int r1 = 20, r2 = 18;
+
+	printf("20 é maior que 18?\n");
+	
+	if (20 > 18) {
+	printf("Sim\n");
+}
+	printf("20 é menor que 18?\n");
+	
+	if (20 < 18) {
+	printf("Não\n")
+}
+	return 0;
+}

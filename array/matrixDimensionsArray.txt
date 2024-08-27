@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+	int numArray[3][3] = {{2, 6, 8}, {5, 10, 15}, {10, 20, 30}};
+	int i, j;
+	
+	printf("Array's sequence:\n");
+	for (i = 0; i < 3; i++) {
+		 
+		for (j = 0; j < 3; j++) {
+		printf("(%d) ", numArray[i][j]);
+	}      
+	printf("\n");
+}
+	printf("\n End");
+return 0;
+}

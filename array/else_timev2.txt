@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+	int current_t = -100;
+	const int morning_t = 12;
+	const int afternoon_t = 18;
+	const int night_t = 24;
+	
+	printf("What Time is It?\n");
+
+if (current_t >= 5 && current_t <= morning_t) {
+	
+	printf("Good Morning!");
+
+}else if (current_t > morning_t && current_t <= afternoon_t) {
+	
+	printf("Good Afternoon!");
+
+}else if (current_t > afternoon_t && current_t <= night_t) {
+
+	printf("Good Night!");
+
+}else if (current_t >= 0 && current_t < 5) {
+
+	printf("Good Night!");
+}else {
+
+	printf("Error 504");
+}
+
+return 0;	
+}

@@ -1,0 +1,14 @@
+#include <studio.h>
+#include <stdbool.h>
+
+int main() {
+	int current_age = 19;
+	int allowed_age = 18;
+
+	if (current_age >= allowed_age) {
+		printf("You are Allowed to vote");
+}	else {
+		printf("You are'nt allowed to vote");
+}
+	return 0;
+}
