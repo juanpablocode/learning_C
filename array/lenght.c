@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int stringLenght();
+int stringLenght(char* s);
 
 int main(void)
 {
@@ -9,15 +9,15 @@ int main(void)
     int lenght;
     printf("Name: \n");
     scanf("%4s", &name);
-    lenght = stringLenght(name[5]);
+    lenght = stringLenght(name);
     printf("Number of charters %d\n", lenght);
     return 0;
 }
 
-int stringLenght(char name[5])
+int stringLenght(char* s)
 {
     int i;
-    while (name[i] != '\0')
+    while (s[i] != '\0')
     {
         i++;
     }
