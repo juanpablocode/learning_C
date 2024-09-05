@@ -1,22 +1,25 @@
 #include <stdio.h>
 #include <string.h>
 
-int main()
+int main(void)
 {
     char userText[20];
-    printf("Digite um texto: ");
+    printf("Before:\n");
     scanf("%s", userText);
+    printf("After: ");
 
-    printf("Texto transformado: ");
     for (int i = 0, n = strlen(userText); i < n; i++)
     {
         if (userText[i] >= 'a' && userText[i] <= 'z')
         {
-            // Se for minúscula, subtraia 32 para obter a letra maiúscula correspondente
             printf("%c", userText[i] - 32);
+        } else {
+            printf("%c", userText[i]);
         }
-        else
-        {
+    printf("\n");
+
+    return 0;
+}
             // Mantenha outros caracteres inalterados
             printf("%c", userText[i]);
         }
