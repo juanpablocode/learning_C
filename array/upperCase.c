@@ -4,21 +4,22 @@
 int main()
 {
     char userText[20];
-    printf("Before:\n");
+    printf("Digite um texto: ");
     scanf("%s", userText);
-    printf("After: ");
+
+    printf("Texto transformado: ");
     for (int i = 0, n = strlen(userText); i < n; i++)
     {
         if (userText[i] >= 'a' && userText[i] <= 'z')
         {
+            // Se for minúscula, subtraia 32 para obter a letra maiúscula correspondente
             printf("%c", userText[i] - 32);
-        } else {
+        }
+        else
+        {
+            // Mantenha outros caracteres inalterados
             printf("%c", userText[i]);
         }
-        /*if (userText <= 'A' && userText >= 'z')
-        {
-            printf("%c", userText[i] - 32);
-        }*/
     }
     printf("\n");
 
