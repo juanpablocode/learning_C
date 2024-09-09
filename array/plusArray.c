@@ -9,6 +9,7 @@ int main(int argv, char* argc[])
     for (int i = 0; i < count; i++)
     {
         printf("%d ", nuList[i]);
+        nuList[i+1] = nuList[i] * nuList[i+1];
     }
     printf("\n");
     return 0;
