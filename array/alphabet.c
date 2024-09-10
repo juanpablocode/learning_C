@@ -4,13 +4,11 @@
 int main (int argv, char* argc)
 {
     char alphabet[11] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', '\0'};
-    int count;
   
   //printf("Insert the alphabet: \n");
   //scanf("%s", alphabet);
-    count = strlen(alphabet);
-    printf("Alphabet Verificator");
-    for (int i = 0; i < count; i++)
+    printf("Alphabet Verificator \n");
+    for (int i = 0, count = strlen(alphabet); i < count; i++)
         {
             if (alphabet[i] >= "A" && alphabet[i] <="Z" )
                 {
@@ -19,6 +17,7 @@ int main (int argv, char* argc)
                     printf(", (%C)This is not a valid character, ", alphabet[i]);
                 }
         }
+        printf("\n");
   
   return 0;
 }
