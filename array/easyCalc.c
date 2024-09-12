@@ -4,7 +4,7 @@
 int main(int argc, char* argv[])
 {
 
-    for (int i = 0, count = strlen(argv); i < count; i++)
+    for (int i = 0 ; i < argc; i++)
     {
         printf("argv[%i] is %s \n", argv[i]);
     }
