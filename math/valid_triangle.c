@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int triangle_verificator(int x, int y, int z);
-int main()
+int main(void)
 {
     int x, y, z, aws;
     printf("Insert the First side of the tryangle: \n");
@@ -24,7 +24,7 @@ int main()
 
 int triangle_verificator(int x, int y, int z)
 {
-    if (x + y  > z && x + z = y && z + y = x)
+    if (x + y  > z && x + z > y && z + y > x)
     {
         return 0;
     } else{
