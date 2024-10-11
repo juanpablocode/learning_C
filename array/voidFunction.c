@@ -15,12 +15,12 @@ int main()
     return 0;
 }
 
-void add_int (int x)
+void add_int (int *x)
 {
     x = 22;
 }
 
 void add_array(int array[4])
 {
-    int array[0] = 22;
+    array[0] = 22;
 }
