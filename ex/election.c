@@ -26,5 +26,23 @@ int main (void)
         scanf("%8d", president.votes[i]);
 
     }
-
+    for(int i = 0; i < count; i++)
+    {
+        printf("%s, %s has %d votes\n", president.name[i], president.party[i], president.votes[i]);
+    }
+    if(president.votes[0] < president.votes[1] && president.votes[1] > president.votes[2])
+        {
+          printf("Candidate %s won!\n", president.name[1]);
+          printf("With %d votes\n", president.votes[1]);
+        }
+    if(president.votes[2] < president.votes[0] && president.votes[0] > president.votes[1])
+        {
+          printf("Candidate %s won!\n", president.name[0]);
+          printf("With %d votes\n", president.votes[0]);
+        }
+    if(president.votes[1] < president.votes[2] && president.votes[2] > president.votes[0])
+        {
+          printf("Candidate %s won!\n", president.name[2]);
+          printf("With %d votes\n", president.votes[2]);
+        }
   return 0;
