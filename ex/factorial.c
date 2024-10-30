@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, char* argv[])
 {
@@ -12,28 +13,38 @@ int main(int argc, char* argv[])
     int count = fac_num;
     int num_size[count];
 
-    if(argv[1] == 0)
+    if(fac_num == 0)
     {
         printf("Factorial of 0! = 1\n");
-    }else if(argv[1] == 1)
+        return 0;
+    }else if(fac_num == 1)
     {
         printf("Factorial of 1! = 1\n");
+        return 0;
     }
-
-    for(int i = count; i < 0; i--)
+    
+    for(int i = 0; i < count; i++)
+    {
+        if (i >= 1)
         {
             num_size[i] = fac_num - i;
+        }else{
+            num_size[i] = 0;
         }
+    }
 
     printf("Factorial of %d! = ");
     for(int i = 0; i < count; i++)
         {
-            printf("%d ", num_size[i]);
-            if( i + 1 < count)
-            { 
-                printf(".\n");
-            }else{
-                printf("x ");
+            if (i >= 1)
+            {
+                printf("%d! ", num_size[i]);
+                if( i + 1 < count)
+                { 
+                    printf(", ");
+                }else{
+                    printf("\n");
+                }
             }
         }
     return 0;
