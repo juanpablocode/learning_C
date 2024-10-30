@@ -2,9 +2,14 @@
 
 int main(int argc, char* argv[])
 {
-    int fac_num, count = 0;
-    fac_num = argv[1];
-    count = fac_num;
+    if(argc < 2)
+    {
+        printf("Usage %s <number>\n", argv[0]);
+        return 1;
+    }
+    
+    int fac_num = atoi(argv[1]);
+    int count = fac_num;
     int num_size[count];
 
     if(argv[1] == 0)
