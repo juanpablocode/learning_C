@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int fun_looking(int user_num, int num[], int *times);
+int fun_looking(int user_num, int num[], int *times, int count);
 
 int main(void)
 {
@@ -13,9 +13,10 @@ int main(void)
     scanf("%2s", user_input);
     user_num = atoi(user_input);
 
-    founded = fun_looking(user_num, num, &times);
+    int count = sizeof(num) / sizeof(num[0]);
+    founded = fun_looking(user_num, num, &times, count);
 
-    if (founded = 0)
+    if (founded == 0)
     {
         printf("The value %d was founded after %d attemps\n", user_num, times);
     }else {
@@ -27,17 +28,16 @@ int main(void)
     return 0;
 }
 
-int fun_looking(int user_num, int num[], int *times)
+int fun_looking(int user_num, int num[], int *times, int count)
 {
-    int counter = sizeof(num) / sizeof(num[0]);
-    for (int i = 0; i < counter; i++)
+    for (int i = 0; i < count; i++)
     {
         if (num[i] == user_num)
         {
             printf("Founded!\n");
             return 0;
         } else{
-            *times++;
+            (*times)++;
         }
     }
     return 1;
