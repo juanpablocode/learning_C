@@ -1,5 +1,7 @@
 #include <stdio.h>
-#include <stlib.h>
+#include <stdlib.h>
+
+int deskArray(int count, int arrayMain[]);
 
 int binarySrc();
 
@@ -12,22 +14,23 @@ int main(void)
   
     count = sizeof(arrayMain)/sizeof(arrayMain[0]);
     
-    deskArray(count);
+    deskArray(count, arrayMain);
     
-    scanf("%2s", user_input);
     printf("What number you are looking for\n");
+    scanf("%2s", user_input);
     user_choice = atoi(user_input);
   
+    
     return 0;
 }
 
-int deskArray()
+int deskArray(int count, int arrayMain[])
 {
     printf("Your List\n");
-    printf("( \n");
-    for(i = 0; i < count; i++);
+    printf("( ");
+    for(int i = 0; i < count; i++)
         {
-          printf("%d "arrayMain[i]);
+          printf("%d ", arrayMain[i]);
         }
     printf(" )\n");
   
