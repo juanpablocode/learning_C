@@ -2,15 +2,14 @@
 #include <stdlib.h>
 
 int deskArray(int count, int arrayMain[]);
-
 int banarySrc(int arrayMain[], int user_choice, int length, int *times);
 
-int main(void)
+int main(void)    
 {
-    char user_input[3];
+    char user_input[3];   
     int user_choice, length, times = 0;
     int arrayMain[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-    
+
     length = sizeof(arrayMain)/sizeof(arrayMain[0]);
     
     deskArray(length, arrayMain);
@@ -18,59 +17,50 @@ int main(void)
     printf("What number you are looking for?\n");
     scanf("%2s", user_input);
     user_choice = atoi(user_input);
-  
+    
     banarySrc(arrayMain, user_choice, length, &times);
     
     return 0;
 }
 
-int deskArray(int count, int arrayMain[])
+int deskArray(int count, int arrayMain[])    
 {
-    printf("Your List\n");
+    printf("Your List\n");   
     printf("( ");
+    
     for(int i = 0; i < count; i++)
-        {
-          printf("%d ", arrayMain[i]);
-        }
+    {
+            printf("%d ", arrayMain[i]);
+    }
+    
     printf(" )\n");
-  
+    
     return 0;
-
 }
 
-int banarySrc(int arrayMain[], int user_choice, int length, int *times)
+int banarySrc(int arrayMain[], int user_choice, int length, int *times)    
 {
-    int arrayRight[10], arrayLeft[10];
-    int middle = (length / 2) -1;
-    (*times)++;
+    int middle;
     
-    if (user_choice == (arrayMain[middle]))
+    while (length > 0)   
     {
-        printf("Founded %d !/n after %d attempts\n", user_choice, *times);
-        return 0;
-
-    }
-    if(user_choice < middle)
-    {
-        for (int i = 0; i < middle; i++)
+        middle = (length / 2);
+        (*times)++;
+    
+        if (arrayMain[middle] == user_choice)
         {
-            arrayLeft[i] = arrayMain[i];    
-        }
-        if(user_choice == (middle / 2))
-        {
-            (*times)++;
-            printf("Founded %d!\n After %d Attempts\n", user_choice, *times);
+            printf("Founded %d !/n after %d attempts\n", user_choice, *times);
             return 0;
-        }
-
-    } else if (user_choice > middle)
-    {
-        for (int i = length; i > middle; i--)
+            
+        }else if(arrayMain[middle] < user_choice)
         {
-            arrayRight[i] = arrayMain[i];
+            arrayMain = arrayMain + middle +1;
+            length = length + middle +1;
+        }else
+        {
+            length = middle;
         }
-
     }
-
-    return 1;
+printf("Not founded!\n After %d attempts\n", *times);
+return 1;
 }
