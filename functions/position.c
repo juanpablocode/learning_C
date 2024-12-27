@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int modify(int **array[]);
+int modify(int *array);
 
 int main(void)
 {
@@ -13,13 +13,13 @@ int main(void)
     return 0;
 }
 
-int modify(int **array[])
+int modify(int *array)
 {
     int userInput;
-    printf("For Witch number you whant to trade for ?\n");
-    scanf("%2d", userInput);
+    printf("For Which number you whant to trade for ?\n");
+    scanf("%d", &userInput);
 
-    **array[0] = userInput;
+    array[0] = userInput;
 
     printf("indice atual = %d\n", array[0]);
 
