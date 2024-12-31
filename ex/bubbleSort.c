@@ -15,7 +15,10 @@ int main(void)
     describle(arrMain, size);
 
     printf("After: \n");
-    int OnOff = bubbleSort(arrMain, &times, size);
+    bubbleSort(arrMain, &times, size);
+    describle(arrMain, size);
+
+    printf("Number of iterctions %d\n", times);
     return 0;
 }
 
@@ -33,18 +36,30 @@ int bubbleSort (int arrMain[], int *times, int size)
 {   
     int trade = 1;
 
-    while (trade > 0)
+    for (int i = 0; i < size -1; i++)
     {
-        for (int i = 0; i < size - 1; i++)
-        {
-            if (arrMain[i] < arrMain[i+1])
-            {
-                arrMain[i] = arrMain[i+1];
+        trade = 0;
 
+        for (int j = 0; j < size - 1 - i; j++)
+        {
+            if (arrMain[j] < arrMain[j + 1])
+            {
+                int temp = arrMain[j];
+                arrMain = arrMain[j+1];
+                arrMain[j+1] = temp;
+                trade = 1;
             }
-        
+            
         }
+        
+        (*times)++;
+        if (trade == 0)
+        {
+            break;
+        }
+        
     }
+    
 
     describle(arrMain, size);
     
