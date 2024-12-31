@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void describle(int arrMain[], int size);
+void describe(int arrMain[], int size);
 int bubbleSort (int arrMain[], int *times, int size);
 
 int main(void)
@@ -12,17 +12,17 @@ int main(void)
     int size = sizeof(arrMain) / sizeof(arrMain[0]);
 
     printf("Before:\n");
-    describle(arrMain, size);
+    describe(arrMain, size);
 
     printf("After: \n");
     bubbleSort(arrMain, &times, size);
-    describle(arrMain, size);
+    describe(arrMain, size);
 
     printf("Number of iterctions %d\n", times);
     return 0;
 }
 
-void describle(int arrMain[], int size)
+void describe(int arrMain[], int size)
 {
     printf("( ");
     for (int i = 0; i < size; i++)
@@ -42,10 +42,10 @@ int bubbleSort (int arrMain[], int *times, int size)
 
         for (int j = 0; j < size - 1 - i; j++)
         {
-            if (arrMain[j] < arrMain[j + 1])
+            if (arrMain[j] > arrMain[j + 1])
             {
                 int temp = arrMain[j];
-                arrMain = arrMain[j+1];
+                arrMain[j] = arrMain[j+1];
                 arrMain[j+1] = temp;
                 trade = 1;
             }
@@ -59,9 +59,5 @@ int bubbleSort (int arrMain[], int *times, int size)
         }
         
     }
-    
-
-    describle(arrMain, size);
-    
     return 0;
 }
