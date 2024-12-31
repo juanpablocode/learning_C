@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void describle(int arrMain[], int size);
-int bubbleSort (int arrMain[], int *times);
+int bubbleSort (int arrMain[], int *times, int size);
 
 int main(void)
 {
@@ -15,7 +15,7 @@ int main(void)
     describle(arrMain, size);
 
     printf("After: \n");
-    int OnOff = bubbleSort(arrMain, &times);
+    int OnOff = bubbleSort(arrMain, &times, size);
     return 0;
 }
 
@@ -29,8 +29,24 @@ void describle(int arrMain[], int size)
     printf(")\n");
 }
 
-int bubbleSort (int arrMain[], int *times)
-{
+int bubbleSort (int arrMain[], int *times, int size)
+{   
+    int trade = 1;
+
+    while (trade > 0)
+    {
+        for (int i = 0; i < size - 1; i++)
+        {
+            if (arrMain[i] < arrMain[i+1])
+            {
+                arrMain[i] = arrMain[i+1];
+
+            }
+        
+        }
+    }
+
+    describle(arrMain, size);
     
     return 0;
 }
