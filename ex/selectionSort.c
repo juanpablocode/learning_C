@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int describleArray(int arrMain[], int arrSize);
-int selectionSort(int arrMain[], int arrSize);
+int selectionSort(int arrMain[], int *times, int arrSize);
 
 int main(void)
 {
@@ -14,7 +14,7 @@ int main(void)
     describleArray(arrMain, arrSize);
     
     printf("After: \n");
-    selectionSort(arrMain, arrSize);
+    selectionSort(arrMain, &times, arrSize);
     describleArray(arrMain, arrSize);
     return 0;
 }
@@ -30,8 +30,7 @@ int describleArray(int arrMain[], int arrSize)
     
     return 0;
 }
-
-int selectionSort(int arrMain[], int arrSize)
+int selectionSort(int arrMain[], int *times, int arrSize)
 {
     int trade = 0;
     for (int i = 0; i < arrSize -1 ; i++)
@@ -50,6 +49,5 @@ int selectionSort(int arrMain[], int arrSize)
         }
         
     }
-    
     return 0;
 }
