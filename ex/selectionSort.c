@@ -32,22 +32,21 @@ int describleArray(int arrMain[], int arrSize)
 }
 int selectionSort(int arrMain[], int *times, int arrSize)
 {
-    int trade = 0;
-    for (int i = 0; i < arrSize -1 ; i++)
+    for (int i = 0; i < arrSize - 1; i++)
     {
-        for (int j = 0; i < arrSize - 1 - i; i++)
+        int minIndex = i;
+        for (int j = i + 1; j < arrSize; j++)
         {
-            if (arrMain[j] < arrMain[j + 1])
+            if (arrMain[j] < arrMain[minIndex])
             {
-                trade = arrMain[j];
+                minIndex = j;
             }
-            if(arrMain[i] < trade)
-            {
-                arrMain[i] = trade;
-            }
-            
         }
-        
+        // Swap the found minimum element with the first element
+        int temp = arrMain[minIndex];
+        arrMain[minIndex] = arrMain[i];
+        arrMain[i] = temp;
     }
+    
     return 0;
 }
