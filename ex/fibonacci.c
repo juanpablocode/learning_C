@@ -1,26 +1,25 @@
 #include <stdio.h>
 
-int sequence(int n);
+int fibonacci(int lenght);
 
 int main(void)
-{   
-    int times, n = 0;
+{
+    int n = 0;
+    
+    printf("How many numbers would you like to view?\n");
+    scanf("%2d", &n);
 
-    sequence(n);
+    fibonacci(n);
 
     return 0;
 }
 
-int sequence(int n)
-{   
-    if ( n == 1)
+int fibonacci(int lenght)
+{
+    for (int i = 0; i < lenght; i++)
     {
-        return 0;
-    }else if((n % 2) == 0)
-    {
-        return 1 + sequence(n/2);
-    }else {
-        return 1 + sequence(3*n + 1);
+        printf("%d", i);
     }
-
+    
+    return 0:
 }
