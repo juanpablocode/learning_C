@@ -8,7 +8,7 @@ int main(void)
     
     printf("How many numbers would you like to view?\n");
     scanf("%2d", &n);
-
+    
     fibonacci(n);
 
     return 0;
@@ -16,10 +16,13 @@ int main(void)
 
 int fibonacci(int lenght)
 {
+    int j = 0;
+    printf("( 0 ");
     for (int i = 0; i < lenght; i++)
     {
-        printf("%d", i);
+        printf("%d ", (j + j++));
     }
+    printf(") ");
     
-    return 0:
+    return 0;
 }
