@@ -10,7 +10,6 @@ int main(void)
 
     printf("Enter a positive integer:\n ");
     scanf("%d", &n);
-    //user_input = atoi(input);
 
     if (n > 0)
     {
@@ -25,15 +24,14 @@ int main(void)
 
 int sequence(int n)
 {   
+    printf("%d ", n);
     if ( n == 1)
     {
         return 0;
     }else if((n % 2) == 0)
     {
-        printf("%d, ", n);
         return 1 + sequence(n/2);
     }else {
-        printf("%d", n);
         return 1 + sequence(3*n + 1);
     }
 
