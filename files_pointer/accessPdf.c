@@ -9,8 +9,8 @@ int main(int argc, char* argv[])
         return 1;
     }
     
-    const char* filename[] = argv[1];    
-    FILE *archive = fopen(*filename, "r");
+    const char* filename = argv[1];
+    FILE *archive = fopen(filename, "r");
     if (archive == NULL)
     {
         printf("Unable to open file %s\n", filename);
